@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bedsheets",
+  "info": {
+    "singularName": "bedsheet",
+    "pluralName": "bedsheets",
+    "displayName": "bedsheet"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "prompt": {
+      "type": "text"
+    },
+    "bedsheetPhoto": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}
