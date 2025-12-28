@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_photos",
+  "info": {
+    "singularName": "user-photo",
+    "pluralName": "user-photos",
+    "displayName": "userPhoto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customid": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}
