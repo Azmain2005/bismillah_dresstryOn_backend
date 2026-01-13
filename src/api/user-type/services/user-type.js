@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * article service.
+ * user-type service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::article.article');
+module.exports = createCoreService('api::user-type.user-type');

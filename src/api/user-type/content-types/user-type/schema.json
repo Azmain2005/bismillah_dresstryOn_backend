@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_types",
+  "info": {
+    "singularName": "user-type",
+    "pluralName": "user-types",
+    "displayName": "userType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "googleid": {
+      "type": "string"
+    },
+    "usertype": {
+      "type": "enumeration",
+      "enum": [
+        "normalUser",
+        "agentUser",
+        "adminUser"
+      ]
+    },
+    "edited_images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::edited-image.edited-image",
+      "mappedBy": "user_type"
+    }
+  }
+}
